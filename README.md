@@ -27,7 +27,7 @@ $ sudo node index.js
 
 ### Configuration
 
-Add your Dash Button by creating a new `dash_button` variable using it's MAC address.
+Add your Dash Button by creating a new variable of `DashDutton` type using it's MAC address.
 ```
 var dash_B268 = DashButton('78:e1:03:92:b2:68')
 ```
