@@ -25,7 +25,7 @@ You will need the following things properly installed on your computer.
 $ sudo node index.js
 ```
 
-## Configuration
+### Configuration
 
 Add your Dash Button by creating a new `dash_button` variable using it's MAC address.
 ```
