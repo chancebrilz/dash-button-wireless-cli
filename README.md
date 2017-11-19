@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ### Installation
 
-* `git clone https://github.com/chancebrilz/dash-button-wireless-cli.git` this repository
+* `git clone https://github.com/chancebrilz/dash-button-wireless-cli.git`
 * `cd dash-button-wireless-cli`
 * `npm install`
 
