@@ -42,8 +42,8 @@ dash_B268.on('detected', function() {
 });
 ```
 
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-### Acknowledgments
+## Acknowledgments
 * I would like to thank [hortinstein](https://github.com/hortinstein) for his [node-dash-button](https://github.com/hortinstein/node-dash-button.git) project.
