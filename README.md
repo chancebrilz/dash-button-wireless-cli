@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 ### Running
 
 ```
-[sudo] node index.js
+$ sudo node index.js
 ```
 
 ## Configuration
