@@ -3,8 +3,8 @@
 # this sh script is MacOS specific and requires blueutil,
 # a 3rd party app: http://www.frederikseiffert.de/blueutil/
 
-if blueutil status | grep 'Status: on' > /dev/null; then
-	blueutil off
+if service bluetooth status | grep 'active (running)' > /dev/null; then
+	service bluetooth stop
 else
-	blueutil on
+	service bluetooth start
 fi
