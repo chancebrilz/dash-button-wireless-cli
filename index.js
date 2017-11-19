@@ -1,42 +1,41 @@
-var dash_button = require('node-dash-button'),
-    dash_B268 = dash_button('78:e1:03:92:b2:68'), // cliff
-    dash_DCB2 = dash_button('78:e1:03:b9:dc:b2'), // cliff
-    dash_BF38 = dash_button('18:74:2e:3c:bf:38'), // schick - GREEN
-    dash_652C = dash_button('fc:a6:67:fb:65:2c'), // schick
-    exec = require('child_process').exec;
+const DashButton = require('node-dash-button');
+const execute    = require('./execute');
+const fs         = require('fs');
 
-console.log("Script started.");
-console.log("waiting for button press...\n");
+var dash_B268 = DashButton('78:e1:03:92:b2:68'),
+    dash_DCB2 = DashButton('78:e1:03:b9:dc:b2'),
+    dash_BF38 = DashButton('18:74:2e:3c:bf:38'),
+    dash_652C = DashButton('fc:a6:67:fb:65:2c');
 
-/*
 
- -- EXAMPLE: running shell script --
-
-exec('./test.sh', function(error, stdout, stderr) {
-	console.log("Toggled bluetooth.");
-	// console.log('stdout: ' + stdout);
-	// console.log('stderr: ' + stderr);
-	if (error !== null) {
-	    console.log('exec error: ' + error);
-	}
-    });
-
-*/
+fs.readFile('welcome.txt', 'utf8', function(err, data) {
+    console.log(data);
+    console.log("\nWaiting for button presses... \n");
+});
 
 dash_B268.on('detected', function() {
 
-    
+    console.log('Toggling bluetooth...');
+
+    execute('./scripts/raspbian/toggle-bluetooth.sh', 'Toggling bluetooth...', 1000);
 
 });
 
 dash_DCB2.on('detected', function() {
-    console.log("Button DCB2 was pressed.");
+
+    console.log('');
+
+    // exec('./scripts/raspbian/toggle-volume.sh', () => {
+    //     console.log("Toggled bluetooth");
+    // });
+
 });
 
 dash_BF38.on('detected', function() {
-    console.log("Button BF38 (gree) was pressed.");
 
-    
+    // exec('./scripts/raspbian/reboot.sh', () => {
+    //     console.log("Toggled bluetooth");
+    // });
 
 });
 
