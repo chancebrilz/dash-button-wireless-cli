@@ -11,6 +11,12 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 
+## Installation
+
+* `git clone https://github.com/chancebrilz/dash-button-wireless-cli.git` this repository
+* `cd dash-button-wireless-cli`
+* `npm install`
+
 ## Running / Development
 
 `node index.js`
