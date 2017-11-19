@@ -10,12 +10,14 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
+* [libcap-dev] (https://packages.debian.org/sid/libcap-dev)
 
 ### Installation
 
 * `git clone https://github.com/chancebrilz/dash-button-wireless-cli.git`
 * `cd dash-button-wireless-cli`
 * `npm install`
+* `apt-get install libpcap-dev` or using another installation method
 
 ### Running
 
