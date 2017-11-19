@@ -46,4 +46,4 @@ dash_B268.on('detected', function() {
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/chancebrilz/dash-button-wireless-cli/blob/master/LICENSE.md) file for details
 
 ## Acknowledgments
-* I would like to thank [hortinstein](https://github.com/hortinstein) for his [node-dash-button](https://github.com/hortinstein/node-dash-button.git) project.
+I would like to thank [hortinstein](https://github.com/hortinstein) for his [node-dash-button](https://github.com/hortinstein/node-dash-button.git) project.
