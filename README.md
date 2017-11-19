@@ -3,7 +3,7 @@
 A "physical" command line interface using Amazon Dash buttons.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will get you a copy of the project up and running on your local linux machine. This program can run on any other machine that Node.js supports, and has the libpcap library installed.
 
 ### Prerequisites
 You will need the following things properly installed on your computer.
