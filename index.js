@@ -15,24 +15,25 @@ fs.readFile('welcome.txt', 'utf8', function(err, data) {
 
 dash_B268.on('detected', function() {
 
-    execute('./scripts/raspbian/toggle-bluetooth.sh', 'Toggling bluetooth...', 1000);
+    execute('./scripts/raspbian/toggle-bluetooth.sh', 'Button B268 Pressed: Toggling bluetooth...', 1000);
 
 });
 
 dash_DCB2.on('detected', function() {
 
-    execute('./scripts/raspbian/toggle-volume.sh', 'Toggling volume...', 1000);
+    execute('./scripts/raspbian/toggle-volume.sh', 'Button DCB2 Pressed: Toggling volume...', 1000);
 
 });
 
 dash_BF38.on('detected', function() {
 
-    execute('./scripts/raspbian/reboot.sh', 'Rebooting system in 5 seconds...', 5000);
+    execute('./scripts/raspbian/reboot.sh', 'Button BF38 Pressed: Rebooting system in 5 seconds...', 5000);
 
 });
 
 dash_652C.on('detected', function() {
 
-    //execute('', '', 0);
+    // placeholder
+    execute('./scripts/tests/fake.sh', 'Button 652C Pressed: ...', 1000);
 
 });
