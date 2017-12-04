@@ -1,0 +1,10 @@
+[Unit]
+Description=Dash Button Wireless CLI
+
+[Service]
+WorkingDirectory=/root
+ExecStart=/usr//bin/nodejs /opt/dash-button-wireless-cli/index.js >> /var/log/node.log 2>&1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
