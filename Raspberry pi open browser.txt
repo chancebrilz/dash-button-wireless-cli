@@ -1,7 +1,0 @@
-Display=:0 chromium www.towson.edu
-
-Description: This command is supposed to open the browser and open the page www.towson.edu
-
-1. make sure chromium is written in lower case
-
-2. if  chromium doesn't work check the name of the browser on the Raspberry Pi
