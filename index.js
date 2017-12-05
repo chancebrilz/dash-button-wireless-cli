@@ -33,6 +33,6 @@ dash_BF38.on('detected', function() {
 
 dash_652C.on('detected', function() {
 
-    execute('./scripts/raspbian/open-chromium.sh', 'Button 652C Pressed: ...', 1000);
+    execute('./scripts/raspbian/open-chromium.sh', 'Button 652C Pressed: Opening towson.edu in Chromium...', 1000);
 
 });
