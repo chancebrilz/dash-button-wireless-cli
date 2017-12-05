@@ -1,3 +1,3 @@
 #!/bin/bash
 
-Display=:0 chromium-browser www.towson.edu
+Display=:0 chromium-browser --no-sandbox www.towson.edu
