@@ -42,6 +42,20 @@ dash_B268.on('detected', function() {
 });
 ```
 
+### Setup as Service
+
+These instructions are for systemd. Upstart can also be used but only systemd is supported by default.
+The program folder must live inside the /opt directory for the service to work. You may need to run these commands as `sudo` if you are not the root user.
+
+```
+$ mv dash-button-wireless-cli /opt/dash-button-wireless-cli
+$ ln -s /opt/dash-button-wireless-cli/services/dashbutton.service /etc/systemd/system/dashbutton.service
+$ systemctl enable dashbutton
+$ systemctl start dashbutton
+```
+
+This will start the service on reboot, and automatically reload the program if it crashes.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/chancebrilz/dash-button-wireless-cli/blob/master/LICENSE.md) file for details
 
